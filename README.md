@@ -1,2 +1,2 @@
 # sudoku_resolver
-a school project for TPI, a web app that automatcally resolvs a sudoku
+a school project for TPI, a web app that automatcally resolves a sudoku
