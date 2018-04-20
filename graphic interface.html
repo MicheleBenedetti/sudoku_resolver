@@ -3,131 +3,139 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Sudoku Resolver</title>
+<style>
+table, th, td {
+    border: 0.05px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
 </head>
-<body style="font-family: Calibri,serif;">
+<body style="font-family: Calibri;">
 
 <h2>Sudoku</h2>
 
 <table>
   <!--prima riga-->
   <tr >
-    <th id="r1c1">1</th>
-    <th class="middlecolumn1">2</th>
-    <th class="rightcolumn1">3</th>
-    <th class="middlecolumn1">4</th>
-    <th class="middlecolumn1">5</th>
-    <th class="rightcolumn1">6</th>
-    <th class="middlecolumn1">7</th>
-    <th class="middlecolumn1">8</th>
-    <th class="rightcolumn1">9</th>
+    <th class="r1c1"><center>1</center></th>
+    <th class="middlecolumn1"><center>2</center></th>
+    <th class="rightcolumn1"><center>3</center></th>
+    <th class="middlecolumn1"><center>4</center></th>
+    <th class="middlecolumn1"><center>5</center></th>
+    <th class="rightcolumn1"><center>6</center></th>
+    <th class="middlecolumn1"><center>7</center></th>
+    <th class="middlecolumn1"><center>8</center></th>
+    <th class="rightcolumn1"><center>9</center></th>
   </tr>
 
   <!--seconda riga-->
   <tr >
-    <th class="r2c1">1</th>
-    <th class="middlecolumn2">2</th>
-    <th class="rightcolumn2">3</th>
-    <th class="middlecolumn2">4</th>
-    <th class="middlecolumn2">5</th>
-    <th class="rightcolumn2">6</th>
-    <th class="middlecolumn2">7</th>
-    <th class="middlecolumn2">8</th>
-    <th class="rightcolumn2">9</th>
+    <th class="r2c1"><center>1</center></th>
+    <th class="middlecolumn2"><center>2</center></th>
+    <th class="rightcolumn2"><center>3</center></th>
+    <th class="middlecolumn2"><center>4</center></th>
+    <th class="middlecolumn2"><center>5</center></th>
+    <th class="rightcolumn2"><center>6</center></th>
+    <th class="middlecolumn2"><center>7</center></th>
+    <th class="middlecolumn2"><center>8</center></th>
+    <th class="rightcolumn2"><center>9</center></th>
   </tr>
 
   <!--terza riga-->
   <tr >
-    <th id="r3c1">1</th>
-    <th class="middlecolumn3">2</th>
-    <th class="rightcolumn3">3</th>
-    <th class="middlecolumn3">4</th>
-    <th class="middlecolumn3">5</th>
-    <th class="rightcolumn3">6</th>
-    <th class="middlecolumn3">7</th>
-    <th class="middlecolumn3">8</th>
-    <th class="rightcolumn3">9</th>
+    <th class="r3c1"><center>1</center></th>
+    <th class="middlecolumn3"><center>2</center></th>
+    <th class="rightcolumn3"><center>3</center></th>
+    <th class="middlecolumn3"><center>4</center></th>
+    <th class="middlecolumn3"><center>5</center></th>
+    <th class="rightcolumn3"><center>6</center></th>
+    <th class="middlecolumn3"><center>7</center></th>
+    <th class="middlecolumn3"><center>8</center></th>
+    <th class="rightcolumn3"><center>9</center></th>
   </tr>
 
   <tr >
-    <th class="r2c1">1</th>
-    <th class="middlecolum1">2</th>
-    <th class="rightcolumn1">3</th>
-    <th class="middlecolumn1">4</th>
-    <th class="middlecolumn1">5</th>
-    <th class="rightcolumn1">6</th>
-    <th class="middlecolumn1">7</th>
-    <th class="middlecolumn1">8</th>
-    <th class="rightcolumn1">9</th>
+    <th class="r1c1"><center>1</center></th>
+    <th class="middlecolumn1"><center>2</center></th>
+    <th class="rightcolumn1"><center>3</center></th>
+    <th class="middlecolumn1"><center>4</center></th>
+    <th class="middlecolumn1"><center>5</center></th>
+    <th class="rightcolumn1"><center>6</center></th>
+    <th class="middlecolumn1"><center>7</center></th>
+    <th class="middlecolumn1"><center>8</center></th>
+    <th class="rightcolumn1"><center>9</center></th>
   </tr>
 
   <!--seconda riga-->
   <tr >
-    <th class="r2c1">1</th>
-    <th class="middlecolumn2">2</th>
-    <th class="rightcolumn2">3</th>
-    <th class="middlecolumn2">4</th>
-    <th class="middlecolumn2">5</th>
-    <th class="rightcolumn2">6</th>
-    <th class="middlecolumn2">7</th>
-    <th class="middlecolumn2">8</th>
-    <th class="rightcolumn2">9</th>
+    <th class="r2c1"><center>1</center></th>
+    <th class="middlecolumn2"><center>2</center></th>
+    <th class="rightcolumn2"><center>3</center></th>
+    <th class="middlecolumn2"><center>4</center></th>
+    <th class="middlecolumn2"><center>5</center></th>
+    <th class="rightcolumn2"><center>6</center></th>
+    <th class="middlecolumn2"><center>7</center></th>
+    <th class="middlecolumn2"><center>8</center></th>
+    <th class="rightcolumn2"><center>9</center></th>
   </tr>
 
   <!--terza riga-->
   <tr >
-    <th class="r2c1">1</th>
-    <th class="middlecolumn3">2</th>
-    <th class="rightcolumn3">3</th>
-    <th class="middlecolumn3">4</th>
-    <th class="middlecolumn3">5</th>
-    <th class="rightcolumn3">6</th>
-    <th class="middlecolumn3">7</th>
-    <th class="middlecolumn3">8</th>
-    <th class="rightcolumn3">9</th>
+    <th class="r3c1"><center>1</center></th>
+    <th class="middlecolumn3"><center>2</center></th>
+    <th class="rightcolumn3"><center>3</center></th>
+    <th class="middlecolumn3"><center>4</center></th>
+    <th class="middlecolumn3"><center>5</center></th>
+    <th class="rightcolumn3"><center>6</center></th>
+    <th class="middlecolumn3"><center>7</center></th>
+    <th class="middlecolumn3"><center>8</center></th>
+    <th class="rightcolumn3"><center>9</center></th>
   </tr>
 
-    <tr >
-    <th id="r7c1">1</th>
-    <th class="middlecolum1" >2</th>
-    <th class="rightcolumn1">3</th>
-    <th class="middlecolumn1" >4</th>
-    <th class="middlecolumn1" >5</th>
-    <th class="rightcolumn1">6</th>
-    <th class="middlecolumn1" >7</th>
-    <th class="middlecolumn1" >8</th>
-    <th class="rightcolumn1">9</th>
+  <tr >
+    <th class="r1c1"><center>1</center></th>
+    <th class="middlecolumn1"><center>2</center></th>
+    <th class="rightcolumn1"><center>3</center></th>
+    <th class="middlecolumn1"><center>4</center></th>
+    <th class="middlecolumn1"><center>5</center></th>
+    <th class="rightcolumn1"><center>6</center></th>
+    <th class="middlecolumn1"><center>7</center></th>
+    <th class="middlecolumn1"><center>8</center></th>
+    <th class="rightcolumn1"><center>9</center></th>
   </tr>
 
   <!--seconda riga-->
   <tr >
-    <th class="r2c1">1</th>
-    <th class="middlecolumn2">2</th>
-    <th class="rightcolumn2">3</th>
-    <th class="middlecolumn2">4</th>
-    <th class="middlecolumn2">5</th>
-    <th class="rightcolumn2">6</th>
-    <th class="middlecolumn2">7</th>
-    <th class="middlecolumn2">8</th>
-    <th class="rightcolumn2">9</th>
+    <th class="r2c1"><center>1</center></th>
+    <th class="middlecolumn2"><center>2</center></th>
+    <th class="rightcolumn2"><center>3</center></th>
+    <th class="middlecolumn2"><center>4</center></th>
+    <th class="middlecolumn2"><center>5</center></th>
+    <th class="rightcolumn2"><center>6</center></th>
+    <th class="middlecolumn2"><center>7</center></th>
+    <th class="middlecolumn2"><center>8</center></th>
+    <th class="rightcolumn2"><center>9</center></th>
   </tr>
 
   <!--terza riga-->
   <tr >
-    <th id="r9c1">1</th>
-    <th class="middlecolumn3">2</th>
-    <th class="rightcolumn3">3</th>
-    <th class="middlecolumn3">4</th>
-    <th class="middlecolumn3">5</th>
-    <th class="rightcolumn3">6</th>
-    <th class="middlecolumn3">7</th>
-    <th class="middlecolumn3">8</th>
-    <th class="rightcolumn3">9</th>
+    <th class="r3c1"><center>1</center></th>
+    <th class="middlecolumn3"><center>2</center></th>
+    <th class="rightcolumn3"><center>3</center></th>
+    <th class="middlecolumn3"><center>4</center></th>
+    <th class="middlecolumn3"><center>5</center></th>
+    <th class="rightcolumn3"><center>6</center></th>
+    <th class="middlecolumn3"><center>7</center></th>
+    <th class="middlecolumn3"><center>8</center></th>
+    <th class="rightcolumn3"><center>9</center></th>
   </tr>
-
-
 
 </table>
-<br/>
+<br>
 <button class="button">Solve</button>
 
 </body>
