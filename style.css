@@ -1,16 +1,4 @@
-
-table, th, td {
-    border: 0.05px solid black;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 5px;
-    text-align: center;
-}
-
-#r1c1 {
-    
+.r1c1 {
     width:50px;
     height:50px;
     border-left-width:4px;
@@ -18,14 +6,12 @@ th, td {
 }
 
 .middlecolumn1 {
-    
     width:50px;
     height:50px;
     border-top-width:4px;
 }
 
 .rightcolumn1 {
-    
     width:50px;
     height:50px;
     border-right-width:4px;
@@ -34,27 +20,23 @@ th, td {
 }
 
 .r2c1 {
-    
     width:50px;
     height:50px;
     border-left-width:4px;
 }
 
 .rightcolumn2 {
-    
     width:50px;
     height:50px;
     border-right-width:4px;
 }
 
 .middlecolumn2 {
-    
     width:50px;
     height:50px
 }
 
-#r3c1 {
-    
+.r3c1 {
     width:50px;
     height:50px;
     border-left-width:4px;
@@ -62,34 +44,16 @@ th, td {
 }
 
 .middlecolumn3 {
-    
     width:50px;
     height:50px;
     border-bottom-width:4px;
 }
 
 .rightcolumn3 {
-    
     width:50px;
     height:50px;
     border-right-width:4px;
     border-bottom-width: 4px;
-}
-
-#r9c1 {
-    
-    width:50px;
-    height:50px;
-    border-left-width:4px;
-    border-bottom-width:4px;
-}
-
-#r7c1 {
-    
-    width:50px;
-    height:50px;
-    border-left-width:4px;
-    border-top-width:4px;
 }
 
 .button {
@@ -97,7 +61,7 @@ th, td {
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
-    text-align: center;
+  text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
